@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.lxj.myproject.MainActivity"
+    tools:ignore="MissingPrefix">
+
+    <Button
+        android:id="@+id/successful_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="网络请求成功"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:corners_radius="5dp"
+        app:pressed_drawable="#71C671"
+        app:ripple_color="#71C671"
+        app:ripple_enable="true"
+        app:solid_color="#25AD6B" />
+
+    <Button
+        android:id="@+id/failure_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="网络请求失败"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:corners_radius="5dp"
+        app:pressed_drawable="#71C671"
+        app:ripple_color="#71C671"
+        app:ripple_enable="true"
+        app:solid_color="#25AD6B" />
+
+    <Button
+        android:id="@+id/abnormal_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="网络请求异常"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:corners_radius="5dp"
+        app:pressed_drawable="#71C671"
+        app:ripple_color="#71C671"
+        app:ripple_enable="true"
+        app:solid_color="#25AD6B" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="点击按钮获取网络数据" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
